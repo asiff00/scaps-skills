@@ -1,0 +1,17 @@
+{
+  "name": "scaps-skills",
+  "description": "Skills for designing, simulating and checking solar cells with SCAPS-1D.",
+  "owner": {
+    "name": "Abdullah Al Asif",
+    "email": "asif.inc.bd@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "scaps",
+      "source": "./",
+      "description": "Design, simulate, fit and sanity-check thin-film and perovskite solar cells with SCAPS-1D.",
+      "version": "0.1.0",
+      "category": "science"
+    }
+  ]
+}

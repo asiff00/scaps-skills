@@ -1,0 +1,20 @@
+[
+  {"query": "simulate an FTO/TiO2/MAPbI3/Spiro-OMeTAD/Au cell in SCAPS and find the best absorber thickness", "should_trigger": true},
+  {"query": "my SCAPS-1D run gives 34% efficiency for a CZTS cell, is that believable?", "should_trigger": true},
+  {"query": "fit the defect density of my CIGS absorber to these dark and light J-V curves using scaps", "should_trigger": true},
+  {"query": "here is a .def file from a paper, reproduce their J-V and QE", "should_trigger": true},
+  {"query": "how does the conduction band offset between CdS and CIGS change Voc? use a device simulation", "should_trigger": true},
+  {"query": "plot the band diagram of my Sb2Se3 solar cell at maximum power point", "should_trigger": true},
+  {"query": "run a temperature-dependent Voc study on the example CdTe device", "should_trigger": true},
+  {"query": "convert my measured n and k data into an absorption file SCAPS can read", "should_trigger": true},
+  {"query": "set up a Mott-Schottky analysis from simulated C-V of a p-n heterojunction cell", "should_trigger": true},
+  {"query": "which ETL electron affinity gives the highest efficiency for a FAPbI3 cell? simulate it", "should_trigger": true},
+  {"query": "compute the transfer-matrix reflectance of a glass/ITO/perovskite stack", "should_trigger": false},
+  {"query": "run a DFT calculation of the band gap of CsPbI3 with Quantum ESPRESSO", "should_trigger": false},
+  {"query": "estimate the annual energy yield of a 5 kW rooftop system in Dhaka with pvlib", "should_trigger": false},
+  {"query": "write a Sentaurus TCAD input deck for a silicon PERC cell", "should_trigger": false},
+  {"query": "explain how a solar panel inverter does maximum power point tracking", "should_trigger": false},
+  {"query": "summarise the latest NREL efficiency chart for perovskite tandems", "should_trigger": false},
+  {"query": "design a battery management system for an off-grid solar installation", "should_trigger": false},
+  {"query": "parse this CSV of outdoor J-V measurements and compute the fill factor", "should_trigger": false}
+]

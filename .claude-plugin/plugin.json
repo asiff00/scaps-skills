@@ -1,0 +1,18 @@
+{
+  "name": "scaps",
+  "version": "0.1.0",
+  "description": "Design, simulate, fit and sanity-check thin-film and perovskite solar cells with SCAPS-1D.",
+  "author": {
+    "name": "Abdullah Al Asif",
+    "email": "asif.inc.bd@gmail.com"
+  },
+  "repository": "https://github.com/asiff00/scaps-skills",
+  "license": "MIT",
+  "keywords": [
+    "scaps",
+    "scaps-1d",
+    "solar-cell",
+    "photovoltaics",
+    "device-simulation"
+  ]
+}

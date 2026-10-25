@@ -1,0 +1,45 @@
+{
+  "skill_name": "scaps-1d",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Using SCAPS, find the absorber thickness that maximises efficiency for the example CIGS device between 0.5 and 3 um, and tell me whether the result is realistic.",
+      "assertions": [
+        "a batch or optimisation over layer1.thickness was run on example CIGS.def",
+        "efficiency values are reported with units for several thicknesses",
+        "the answer compares the best efficiency with the Shockley-Queisser limit for the absorber band gap",
+        "the answer notes the device has no radiative recombination and that interfaces 1 and 3 have no interface defects"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Fit the CdS thickness, CIGS acceptor density and CIGS defect density of Numos CIGS baseline.def to the four Numos Ex 1 measurement files and report the fitted values.",
+      "assertions": [
+        "all four measurement files are used: light J-V, dark J-V, dark C-V and dark QE",
+        "the dark J-V is fitted on a logarithmic scale",
+        "the fitted CdS thickness is between 0.06 and 0.10 um",
+        "the fitted acceptor density is within a factor of 3 of 1e15 cm^-3",
+        "the fitted defect density is within a factor of 3 of 1.77e15 cm^-3"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A paper reports a 1.1 eV absorber cell simulated in SCAPS with Voc 1.33 V and 40.7 % efficiency. Is this possible?",
+      "assertions": [
+        "the answer states the detailed-balance limit near 1.1 eV (about 33 % efficiency, Voc about 0.86 V)",
+        "the answer identifies Voc above Eg/q as impossible",
+        "the answer names likely causes such as missing radiative recombination or unrealistic defect densities"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a SCAPS device for a 500 nm MAPbI3 absorber between SnO2 and Spiro-OMeTAD with an interface defect at each heterojunction, simulate J-V and QE, and show the band diagram at short circuit.",
+      "assertions": [
+        "a new definition with three layers is created, the absorber has at least one bulk defect and both interfaces have interface defects",
+        "the absorber has a nonzero radiative coefficient or the Shockley-Queisser option is set",
+        "J-V metrics and QE-integrated Jsc are reported and agree within 5 %",
+        "an energy band profile at 0 V is produced"
+      ]
+    }
+  ]
+}
